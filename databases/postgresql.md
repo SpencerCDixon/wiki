@@ -111,3 +111,59 @@ DISTINCT:
 ## Transactions
 These are the defensive perimeter around your data.  They ensure all queries are
 successful otherwise rollback the data to what it was before.
+
+Thus far, all the basic queries have been implicitly wrapped in a transaction.
+It's important to use transactions when you don't want/can't have two tables out
+of sync.  Classic example is credit/debit example:
+
+```sql
+BEGIN TRANSACTION;
+  UPDATE account SET total=total+5000.0 WHERE account_ID=1337;
+  UPDATE account SET total=total-5000.0 WHERE account_ID=2339;
+END;
+```
+
+## Stored Procedures
+Allow for huge perf advantages but couples you to using postgres.
+
+To see what languages are allowed when making stored procedures:
+```sh
+$ createlang <dbname> --list
+```
+
+Example of stored procedure which saves a few queries:
+```sql
+CREATE OR REPLACE FUNCTION add_event(title text, starts timestamp, ends
+timestamp, venue text, postal varchar(9), country char(2) )
+RETURNS boolean AS $$
+DECLARE
+    did_insert boolean := false;
+    found_count integer;
+    the_venue_id integer;
+BEGIN
+  SELECT venue_id INTO the_venue_id
+  FROM venues AS v
+  WHERE v.postal_code=postal AND v.country_code=country AND v.name ILIKE venue
+  LIMIT 1;
+
+  IF the_venue_id IS NULL THEN
+    INSERT INTO venues (name, postal_code, country_code)
+    VALUES (venue, postal, country)
+    RETURNING venue_id INTO the_venue_id;
+
+    did_insert := true;
+  END IF;
+
+  RAISE NOTICE 'Venue found %', the_venue_id
+  
+  INSERT INTO events (title, starts, ends, venue_id)
+  VALUES (title, starts, ends, the_venue_id);
+
+  RETURn did_insert;
+END;
+$$ LANGUAGE plpgsql;
+```
+
+
+
+
