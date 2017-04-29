@@ -11,10 +11,34 @@ client `psql`.
 When using psql it uses a hash mark for admin users and dollar sign for regular
 users.
 
-```
+```sh
 $ psql book
 book=# <-- admin user
 book=$ <-- regular user
+```
+
+Piping a .sql file into your db:
+
+```sh
+$ cat ./path-to-file.sql | psql <dbname>
+```
+
+OR
+
+```sh
+$ psql <dbname> < ./path-to-file.sql
+```
+
+Get list of tables
+
+```sh
+$ psql book
+book=$ \d
+```
+
+Get list details about a specific table
+```sh
+book=$ \d categories
 ```
 
 ## Adding Extensions
