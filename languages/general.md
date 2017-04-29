@@ -41,3 +41,17 @@ interpreter that recursively evaluates an AST is the slowest at execution time
 but the easiest to build/reason about.  Generally, it appears the more perf you
 need out of the language the harder and more time consuming the language design
 tends to be.
+
+## What does "Turing Complete" mean?
+[Video explanation](https://www.youtube.com/watch?v=RPQD7-AOjMI)
+
+What does a thing have to be to be turing complete?  
+
+* needs to be able to do everything a turning machine can do.  
+* must have conditional branching  
+* must be able to read/write data  
+* must have the ability to 'goto' somewhere different in memory (really just the essense of if/elses)  
+* must be able to have abritrary amount of memory. (access to as much memory as the problem needs)  
+
+A turing machine is an endless piece of tape (0/1's).  The ability to read and
+write on an infinite piece of tape is powerful enough to compute anything.

@@ -2,3 +2,112 @@
 
 [Useful repo from Todd on common postgres
 tasks](https://github.com/GoesToEleven/golang-web-dev/tree/master/044_postgres)
+
+## Client
+
+Has a server running on port `5432` by default and you can connect to it via the
+client `psql`.
+
+When using psql it uses a hash mark for admin users and dollar sign for regular
+users.
+
+```
+$ psql book
+book=# <-- admin user
+book=$ <-- regular user
+```
+
+## Adding Extensions
+
+1. Enter your db
+2. Create extensions
+
+```
+psql <dbname>
+
+CREATE EXTENSION <extensionName> or "<extension-name>";
+```
+
+## Data Types
+
+* `text` - string of any length
+* `varchar(#)` - string of variable length up to #
+* `char(#)` - string of exactly # characters
+
+## Creating
+
+```sql
+CREATE TABLE cities (
+  name text NOT NULL,
+  postal_code varchar(9) CHECK (postal_code <> ''),
+  country_code char(2) REFERENCES countries,
+  PRIMARY KEY (country_code, postal_code)
+);
+```
+
+* The `<>` check confirms that no values are empty strings.
+* Uses a compound primary key consisting of the country code and postal code
+
+```sql
+CREATE TABLE venues (
+  venue_id SERIAL PRIMARY KEY,
+  name varchar(255),
+  street_address text,
+  type char(7) CHECK ( type in ('public', 'private') ) DEFAULT 'public',
+  postal_code varchar(9),
+  country_code char(2),
+  FOREIGN KEY (country_code, postal_code) 
+    REFERENCES cities (country_code, postal_code) MATCH FULL
+);
+```
+
+## Insertion
+You can have postgres return columsn after insertion by ending the query with a
+'RETURNING' statement
+
+```sql
+INSERT INTO venues (name, postal_code, country_code)
+VALUES ('Voodoo Donuts', '97205', 'us') RETURNING venue_id;
+```
+
+This allows you to get the primary key of the inserted row without having to do
+an additional query!
+
+Sub-Select.  When inserting a new row that has a foreign key:
+```sql
+INSERT INTO events (titole, starts, ends, venue_id)
+  VALUES ('Moby', '2012-02-06 21:00', '2012-02-06 23:00', (
+    SELECT venue_id
+    FROM venues
+    WHERE name = 'Crystal Ballroom'
+  )
+);
+```
+Instead of querying to get the venue_id we use a sub select query to get the
+venue_id for us and then use that as a value in the insertion clause.
+
+## Indexing
+
+Without an index postgres must read each row from disk to see if it matches the
+query.  Indexes help prevent full table scans when performing a query.
+
+Postgres will automatically create an index on the primary key.  Using the
+UNIQUE keyword is another way to force an index on a table column.
+
+To see all the indexes you can use the `\di` command inside psql.
+
+## Querying
+`SELECT venue_id FROM events GROUP BY venue_id;` is so common we can use
+DISTINCT:  
+
+`SELECT DISTINCT venue_id FROM events;`
+
+
+## Window Functions
+
+> allow you to use built-in aggregate functions without requiring eveyr single
+> field to be grouped to a single row
+
+## Transactions
+These are the defensive perimeter around your data.  They ensure all queries are
+successful otherwise rollback the data to what it was before.
