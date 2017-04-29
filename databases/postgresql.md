@@ -164,6 +164,34 @@ END;
 $$ LANGUAGE plpgsql;
 ```
 
+If we stored this func in `add_event.sql` we could add it to our DB like:
+```sql
+book=# \i add_event.sql
+```
 
+## Triggers
+These allows us to execute a stored procedure whenever some event happens.
 
+## Views
+These are essentially 'virtual' tables.  You create a query and the prepend
+necessary sql to create a view.  You're then able to treat that view like a
+table and make further queries on it.  For example:
+
+```sql
+CREATE VIEW holidays AS
+  SELECT event_id AS holiday_id, title AS name, starts AS date
+  FROM events
+  WHERE title LIKE '%Day%' AND venue_id IS NULL;
+```
+
+## Rules
+A RULE is a way to alter the parsed query tree.  It allows you to define how SQL
+should parse the AST.
+
+SQL Query   
+  --> Lexer   
+  --> AST   
+  --> RULES   
+  --> Query Planner (optimizes disk ops)   
+  --> Execution  
 
