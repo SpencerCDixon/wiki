@@ -15,8 +15,9 @@ Just a repo to store notes on various topics.
     + [Character Encoding](./languages/character-encoding.md)
     + [Bash](./languages/bash.md)
 * Networking
+    + [General](./networking/general.md)
     + [DNS](./networking/dns.md)
-    + [TCP](./networking/tcp.md)
+    + [TCP](./networking/ip-tcp.md)
     + [HTTP](./networking/http.md)
 * Unix
     + [SSH](./unix/ssh.md)
@@ -29,6 +30,11 @@ Just a repo to store notes on various topics.
 ## Construction
 
 * [Maine Studio](./construction/maine.md)
+
+## Philosophy
+
+* [General](./philosophy/general.md)
+* [Stoicism](./philosophy/stoicism.md)
 
 
 **[⬆️ back to top](#programming)**
