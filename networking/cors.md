@@ -1,0 +1,11 @@
+# CORS
+
+Cross Origin Resource Sharing
+
+Sometimes when debugging CORS issues it can be useful to run Chrome with CORS
+disabled just to confirm that it actually is a CORS related bug.  To do that you
+can open chrome with:
+
+```sh
+$ open -a Google\ Chrome --args --disable-web-security --user-data-dir=~/desktop/some-data
+```

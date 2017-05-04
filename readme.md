@@ -2,11 +2,11 @@
 
 Just a repo to store notes on various topics.
 
-## Computer Science
-
 > Every good carpenter must understand what's in their toolbelt.  And like any
 > good builder, you can never hope to be a master without a familiarity of the many
 > options at your disposal.
+
+## Computer Science
 
 * [Languages](./languages/general.md)
     + [General](./languages/general.md)
@@ -14,6 +14,9 @@ Just a repo to store notes on various topics.
     + [JavaScript](./languages/javascript/node.md)
     + [Character Encoding](./languages/character-encoding.md)
     + [Bash](./languages/bash.md)
+* CSS
+    + [Frameworks](./css/frameworks.md)
+    + [CSS-in-JS](./css/in-js.md)
 * Networking
     + [General](./networking/general.md)
     + [DNS](./networking/dns.md)
@@ -26,10 +29,16 @@ Just a repo to store notes on various topics.
     + [Postgres](./databases/postgresql.md)
 * Vim
 * White Papers
+* Design
+    + [General](./design/general.md)
+
+**[⬆️ back to top](#programming)**
 
 ## Construction
 
 * [Maine Studio](./construction/maine.md)
+
+**[⬆️ back to top](#programming)**
 
 ## Philosophy
 
