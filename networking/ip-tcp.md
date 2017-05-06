@@ -29,3 +29,20 @@ Client can send a data packet as soon as the ACK packet is dispatched.
 Each new connection will have a full roundtrip of latency before any app data
 can be transferred!  New TCP connections are expensive and it's pivotal to try
 and reuse connections.
+
+**Slow Start** & **Slow Start Restart**  
+TCP ramps up congestion window sizes slowly over time.  SS inits the connection
+with a conservative window and for every roundtrip doubles the amount of data
+that can be sent.  Once a packet is lost the _congestion avoidance_ algorithm
+takes over.
+
+**Congestion avoidance** assumes that there is a congested link/router somewhere
+that was forced to drop packets.  It will reset the congestion window to
+minimize further loss.
+
+**HOL** (Head of line) blocking:
+Because TCP traffic must be sent in order, if a packet is lost then all other
+packets build up and wait in the buffered queue until the lost packet can be
+resent and received by the server.  These delays are commonly referred to as
+_jitter_.
+
