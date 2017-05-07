@@ -46,3 +46,8 @@ packets build up and wait in the buffered queue until the lost packet can be
 resent and received by the server.  These delays are commonly referred to as
 _jitter_.
 
+General Speed Advice:
+* Send fewer bits when possible  
+* Make sure kernel is upgraded and up to date (switches some pivotal settings that were released in an RFC ~2013  
+* Can't make bits travel faster -- so move them closer. CDNs  
+* TCP connection reuse is critical to prevent unnecessary 3-way handshakes  
