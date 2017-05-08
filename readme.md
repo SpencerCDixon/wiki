@@ -31,6 +31,7 @@ Just a repo to store notes on various topics.
 * White Papers
 * Design
     + [General](./design/general.md)
+    + [API Design](./design/api.md)
 
 **[⬆️ back to top](#programming)**
 
