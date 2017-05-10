@@ -32,6 +32,8 @@ Just a repo to store notes on various topics.
 * Design
     + [General](./design/general.md)
     + [API Design](./design/api.md)
+    + [CLI Design](./design/cli.md)
+
 
 **[⬆️ back to top](#programming)**
 
