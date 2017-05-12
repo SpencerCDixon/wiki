@@ -77,3 +77,13 @@ known as _wavelength-devision multiplexing_ (WDM).  One fiber cable can
 multiplex over 400 wavelengths making them an order of magnitude more effective
 than copper/metal wires.
 
+
+## NAT - Network Address Translators
+
+**Problem** - IPv4 addresses are only 32 bits long - thus maximum of 4 billion
+unique IP addresses. 
+
+**Solution** - NAT!  Put a device at the _edge of the network_ which is
+responsibile for local IP mapping (thus allowing more devices to exist than 4
+billion)
+

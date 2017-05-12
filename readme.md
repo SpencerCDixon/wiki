@@ -40,6 +40,7 @@ Just a repo to store notes on various topics.
 ## Construction
 
 * [Maine Studio](./construction/maine.md)
+* [Project Ideas](./construction/project-ideas.md)
 
 **[⬆️ back to top](#programming)**
 
