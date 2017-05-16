@@ -51,3 +51,18 @@ This can get difficult to manage if you have clients opening up many connections
 in parallel to fetch resources faster and/or many server deployments.  It's
 worth looking into if you have high traffic concerns or a relatively straight
 forward deployment.
+
+### Chain of Trust
+Boils down to:  
+
+* I share keys with my friend Coleman
+* I then meet Aidan who is friends with Coleman
+* Aidan uses Colemans key to prove to me he really is friends with Aidan
+* I can then trust Aidan.
+
+The whole internet is built upon this chain of trust and there are a few ways it
+can start.
+
+1.  You can manually specify on your computer which certificates you trust  
+2.  You can follow the chain coming form a CA (Certificate Authority)  
+3.  Most OS's/browsers have pre-filled certs that they will trust  
