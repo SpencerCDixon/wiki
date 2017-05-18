@@ -66,3 +66,7 @@ can start.
 1.  You can manually specify on your computer which certificates you trust  
 2.  You can follow the chain coming form a CA (Certificate Authority)  
 3.  Most OS's/browsers have pre-filled certs that they will trust  
+
+### TLS False Start
+Allows the sender to send app data when the TLS handshake is only partially
+complete.
