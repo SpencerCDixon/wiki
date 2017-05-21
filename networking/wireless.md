@@ -46,3 +46,6 @@ Example:
 * receiver/sender can process 1,000 pulses (or symbols) per second... 1000 baud
 * each symbol represnts a different 2-bit sequence (00, 01, 10, 11)
 * the bit rate of the channel is 1000 baud X 2 = 2000 bits/s
+
+
+### LTE - Long Term Evolution 
