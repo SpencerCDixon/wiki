@@ -128,3 +128,11 @@ find . -size +200k
 Modifiers for filesize:
 
 ![File sizes modifiers for find command](./assets/file-size.png)
+
+## pgrep
+
+Pgrep can be used to find the process id running:
+
+```
+pgrep user-server
+```

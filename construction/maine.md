@@ -14,3 +14,6 @@
 * chess board out of sea glass/rocks
 * wood chip the path by buzzy and freds house
 * tear down the old potato farm stuff
+
+## Kitchen
+* [Most epic kitchen set up ever](http://thegalley.com/preparing-pasta-non-galley-kitchen-vs-galley-kitchen/)

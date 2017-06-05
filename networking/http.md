@@ -52,5 +52,25 @@ called.
 ## Useful Tools
 * [Useful for testing website speed and see the waterfall in various browsers](https://www.webpagetest.org/)
 
+### Domain Sharding
 
+Since clients are limited to 6 TCP connections in parallel at a time there is a
+technique to get around this called domain sharding.  DS means you can split up
+the resources the client needs to fetch into many different domain names:
+`shard1.example.com`, `shard2.example.com`, etc.
 
+TCP connection pool is determined by the hostname and not IP, so these shards
+could all be pointed at the same server (or some CDN) to get the parallelized
+benefits.
+
+**Note** domain sharding can actually hurt performance due to additional DNS
+lookups, TCP slow start, and TLS handshakes.  It's important to take these into
+consideration before going down this path. (pg. 203 hpbn has good info on this)
+
+**Tip**: When to inline (use data URI's) --> if resource is small (>1-3KB) and
+unique.  I.e won't appear on the page/website multiple times.  If the image is
+bigger it could not render properly in older versions of IE and if it's a common
+image you won't get cacheing benefits from putting it inline.
+
+Base64 encoding encures a 33% byte overhead.  So technically, by inlining you
+are adding more bytes to be sent down the wire.
