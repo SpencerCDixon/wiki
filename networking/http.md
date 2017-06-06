@@ -74,3 +74,35 @@ image you won't get cacheing benefits from putting it inline.
 
 Base64 encoding encures a 33% byte overhead.  So technically, by inlining you
 are adding more bytes to be sent down the wire.
+
+### HTTP 2
+
+Goals:
+* reduce latency
+* req/response multiplexing
+* minimize protocol overhead via header compression
+* request prioritization via server push
+
+Keywords:
+
+**stream**: a bidirectional flow of bytes within an established connection,
+which may carry one or more messages.
+
+**message**: a complete sequence of frames that map to a logical request or
+response message.
+
+**frame**: the smallest unit of communication in HTTP/2, each containing a frame
+header, which at a minimum identifies the stream to which the frame belongs.
+
+**multiplexing**: Multiplexing (or muxing) is a way of sending multiple signals
+or streams of information over a communications link at the same time in the
+form of a single, complex signal; the receiver recovers the separate signals, a
+process called demultiplexing (or demuxing).
+
+Streams are allowed to have dependencies and weights which allow the client to
+form a 'prioritization tree'.  This allows servers to prioritize
+CPU/bandwidth/memory/etc. to get the most important response to the client as
+soon as possible.
+
+**WOW**: due to these deps/weights we can even re-prioritize resources based
+on user events... _what interesting things could I do with that?__
