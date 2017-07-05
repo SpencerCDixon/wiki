@@ -55,3 +55,11 @@ What does a thing have to be to be turing complete?
 
 A turing machine is an endless piece of tape (0/1's).  The ability to read and
 write on an infinite piece of tape is powerful enough to compute anything.
+
+## Article on Lisp/Developers by Paul Graham
+
+>  If you chose technology that way, you'd be running Windows. When you choose
+>  technology, you have to ignore what other people are doing, and consider only
+>  what will work the best.
+
+[Original article here](http://www.paulgraham.com/avg.html)
