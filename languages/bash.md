@@ -72,3 +72,55 @@ id (and not PID for some odd reason) you run: `jobs`
 *
 
 
+
+# Useful MACOS configuration:
+```
+# ==================================================================
+# MACOS# ============================================================
+
+======# KEYBOARDecho "Configuring key repeat"defaults write NSGlob
+
+
+
+
+alDomain KeyRepeat -int 1defaults write NSGlobalDomain InitialKeyRepea
+t -int 10# HIDDEN FILESecho "Configuring hidden files to show"defa
+
+
+
+
+ults write com.apple.finder AppleShowAllFiles YESkillall Finder# MEN
+
+
+U BARecho "Configuring menu bar to autohide"defaults write NSGlobalD
+
+
+omain _HIHideMenuBar -bool truekillall Finder# DOCKecho "Configuri
+
+
+
+
+ng dock to autohide"osascript <<EOD  tell application "System Events"
+
+    if (get autohide of dock preferences) is false then      tell doc
+
+    k preferences to set autohide to not autohide    end if  end tellEOD
+
+
+# SCREENSHOTSecho "Configuring screenshots to save in Downloads"de
+
+
+
+
+faults write com.apple.screencapture location ~/Downloadskillall Syste
+mUIServer# CHROMEecho "Configuring incognito mode"defaults write c
+
+
+
+
+om.google.chrome IncognitoModeAvailability -integer 1# =============
+
+
+=====================================================echo "Done"
+
+```

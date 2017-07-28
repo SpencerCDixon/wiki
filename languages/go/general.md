@@ -15,3 +15,8 @@ The `&` symbol can be thought of as: 'Address of'.
 
 [This is a great article explaining how pointers work in
 Go.](https://dave.cheney.net/2017/04/26/understand-go-pointers-in-less-than-800-words-or-your-money-back)
+
+## API Configuration -- using function options
+
+[Great blog post explaining the pros/cons](https://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis)
+[Rob pike explaining function options](https://commandcenter.blogspot.com.au/2014/01/self-referential-functions-and-design.html)
