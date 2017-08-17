@@ -20,3 +20,8 @@ Go.](https://dave.cheney.net/2017/04/26/understand-go-pointers-in-less-than-800-
 
 [Great blog post explaining the pros/cons](https://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis)
 [Rob pike explaining function options](https://commandcenter.blogspot.com.au/2014/01/self-referential-functions-and-design.html)
+
+Testing Notes:
+* test helpers should never return an error
+* they should have access to the 't' variable and fail the test if there is an error
+* for complex structs create an internal testString() string func to help with comparisons
