@@ -45,10 +45,10 @@ Update, & Delete.
 
 #### ACID
 
-**A** - atomic; all ops succeed or none do
-**C** - consistent; the data will always be in a good state, no inconsistent states
-**I** - isolated; transactions don't interfere
-**D** - durable; a committed transaction is save, even after a server crash
+**A** - atomic; all ops succeed or none do  
+**C** - consistent; the data will always be in a good state, no inconsistent states  
+**I** - isolated; transactions don't interfere  
+**D** - durable; a committed transaction is save, even after a server crash  
 
 #### CAP Theorem
 

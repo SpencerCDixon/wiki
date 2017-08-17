@@ -17,6 +17,7 @@ Just a repo to store notes on various topics.
 * CSS
     + [Frameworks](./css/frameworks.md)
     + [CSS-in-JS](./css/in-js.md)
+    + [Printing](./css/printing.md)
 * Networking
     + [General](./networking/general.md)
     + [DNS](./networking/dns.md)
