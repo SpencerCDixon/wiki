@@ -8,6 +8,10 @@ Just a repo to store notes on various topics.
 
 ## Computer Science
 
+Good code:
+> minimize the amount of knowledge you need to have in-cranium before you can
+> make progress
+
 * [Languages](./languages/general.md)
     + [General](./languages/general.md)
     + [Go](./languages/go/general.md)
