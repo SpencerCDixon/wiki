@@ -1,5 +1,7 @@
 # HTTP
 
+GET/POST/PATCH etc. are called _verbs_ in HTTP parlance
+
 ## History
 
 * was invented by Tim Berners-Lee (same guy who thought up the WWW)
