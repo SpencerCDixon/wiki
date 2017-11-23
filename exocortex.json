@@ -1,0 +1,12 @@
+{
+  "server": {
+    "host": "localhost",
+    "port": 1234
+  },
+  "repository": "/Users/spence/notes",
+  "pushInterval": 30,
+  "title": "My Wiki",
+  "remote": "origin",
+  "branch": "master",
+  "debug": true
+}
