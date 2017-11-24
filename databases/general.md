@@ -1,6 +1,6 @@
 # Database's 
 
-## TOC
+## Table Of Contents
 
 When deciding on DB selection this is a great question to ask:
 
