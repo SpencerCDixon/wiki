@@ -4,9 +4,8 @@
     "port": 1234
   },
   "repository": "/Users/spence/notes",
-  "pushInterval": 30,
-  "title": "My Wiki",
+  "syncInterval": 30,
+  "title": "Notes",
   "remote": "origin",
-  "branch": "master",
-  "debug": true
+  "branch": "master"
 }
