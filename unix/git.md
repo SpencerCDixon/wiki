@@ -31,3 +31,5 @@ For example:
 git rev-parse master
 // => 6blksfio23hskfh3h324 (some sha)
 ```
+
+[A great blog post with some neat git tricks](https://csswizardry.com/2017/05/little-things-i-like-to-do-with-git/#generate-a-changelog)
