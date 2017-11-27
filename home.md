@@ -4,6 +4,6 @@
 
 *  [Language](./languages/general)
     + [General](./languages/general)
-    + [Go](./language/go/general)
+    + [Go](./languages/go/general)
 
 
