@@ -25,26 +25,38 @@ Good code:
     + [DNS](./networking/dns.md)
     + [TCP](./networking/ip-tcp.md)
     + [HTTP](./networking/http.md)
+    + [CORS](./networking/cors.md)
+    + [Cryptography](./networking/crypto.md)
+    + [SSL/TLS](./networking/tls-ssl.md)
+    + [UDP](./networking/udp.md)
+    + [Websockets](./networking/websockets.md)
+    + [Wireless](./networking/wireless.md)
 * Unix
     + [SSH](./unix/ssh.md)
+    + [ZSH](./unix/zsh.md)
+    + [Git](./unix/git.md)
+    + [Commands](./unix/commands.md)
 * Databases
     + [General](./databases/general.md)
     + [Postgres](./databases/postgresql.md)
 * Vim
-* White Papers
+* [White Papers](./white-papers/general.md)
+* [Testing](./testing/general.md)
 * Design
     + [General](./design/general.md)
     + [API Design](./design/api.md)
     + [CLI Design](./design/cli.md)
+    + [Feature design](./design/features.md)
+* [Game Development](./gamedev/patterns.md)
 
-**[⬆️ back to top](#programming)**
+**[⬆️ back to top](#computer-science)**
 
 ## Construction
 
 * [Maine Studio](./construction/maine.md)
 * [Project Ideas](./construction/project-ideas.md)
 
-**[⬆️ back to top](#programming)**
+**[⬆️ back to top](#computer-science)**
 
 ## Philosophy
 
@@ -52,5 +64,4 @@ Good code:
 * [Stoicism](./philosophy/stoicism.md)
 * [Feynman Technique](./philosophy/feynman.md)
 
-
-**[⬆️ back to top](#programming)**
+**[⬆️ back to top](#computer-science)**

@@ -10,4 +10,4 @@ switches into characters humans understand (ex: English alphabet).
 
 ### ASCII Color Codes:  
 
-![color codes](../assets/ascii-color.png)
+![color codes](./assets/ascii-color.png)

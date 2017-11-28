@@ -1,1 +1,8 @@
-{"server":{"host":"localhost","port":1234},"repository":"/Users/spence/notes","syncInterval":5,"title":"custom","remote":"origin","branch":"master"}
+{
+  "server": { "host": "localhost", "port": 1234 },
+  "repository": "/Users/spence/notes",
+  "syncInterval": 20,
+  "title": "Personal Wiki",
+  "remote": "origin",
+  "branch": "master"
+}
