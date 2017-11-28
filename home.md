@@ -20,6 +20,8 @@ Good code:
     + [Frameworks](./css/frameworks.md)
     + [CSS-in-JS](./css/in-js.md)
     + [Printing](./css/printing.md)
+    + [A11y](./css/a11y.md)
+    + [Tips](./css/tips.md)
 * Networking
     + [General](./networking/general.md)
     + [DNS](./networking/dns.md)
