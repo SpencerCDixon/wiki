@@ -65,3 +65,9 @@ Good code:
 * [Feynman Technique](./philosophy/feynman.md)
 
 **[⬆️ back to top](#computer-science)**
+
+## Finance
+
+* [Options](./finance/options.md)
+
+**[⬆️ back to top](#computer-science)**
