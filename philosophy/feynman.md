@@ -7,3 +7,5 @@ knowledge in a topic.  The four steps are:
 2.  Identify any gaps in your own understanding when trying to exlain.
 3.  Go back to source material and study your weak points.
 4.  Recurse the following steps until you achieve mastery.
+
+![Genius Quote](./assets/genius.png)
