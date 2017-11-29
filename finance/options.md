@@ -47,6 +47,35 @@ is trading at $10, options to buy at $10 will be expensive, $12 will be cheaper,
 and $15 will be the cheapest because it's least likely the stock will raise
 value to be $15.
 
+**Covered Calls**:  
+_Selling_ or _writing covered calls_ mean the same thing.  A covered calls just
+means you're selling a call on _stock that you already own_.
+
+Two reasons you'd sell a covered call:
+
+1.  Generate short term cash flow (the premium for selling the call)
+2.  As a general method of selling stock that you own.
+3.  Extra: some 401k/tax deferred accounts let you sell covered calls.  Great way to generate income in these accounts!
+
+So, if you're already thinking of selling some shares of stock X, you mine as
+well do it as a covered call to get a few extra bucks on the premium.  
+
+> Useful analogy --> it's like buying a house and renting it to someone.
+
+**At-the-money**: when the option strike price is within a few pennies of what the stock is currently trading for. In options chain graphs this is the line that changes the colors.
+**Out-of-the-money**: when the strike price of the call option is higher than the price of the underlying stock.
+**In-the-money**: when the strike price of the call option is lower than the price of the underlying stock.
+
+If I sell a covered call and by the expiration date the option is 'in the
+money', meaning the strike price is less than what the stock is trading for.  I
+will get _assigned_ an exercise notice: meaning that the person who owns the
+option is going to buy my shares to make their profit.  The buyer only makes a
+profit if the difference between strike/actual is greater than the premium they
+paid me to have the _right_ to buy my shares.
+
+**If you are going to sell a covered call, you should be prepared to sell your
+stock at the strike price of the covered call!**
+
 ## Put
 
 ## Vocab
@@ -54,8 +83,14 @@ value to be $15.
 **Strike Price**: price you pay to get the shares.
 **Premium**: If buyer, the price you pay to have the right to buy. If seller, it's the money you receive for giving the right.
 
+**At-the-money**: when the option strike price is within a few pennies of what the stock is currently trading for. In options chain graphs this is the line that changes the colors.
+**Out-of-the-money**: when the strike price of the call option is higher than the price of the underlying stock.
+**In-the-money**: when the strike price of the call option is lower than the price of the underlying stock.
+
 ## Initial Learning Strategies
 
 _Some notes on how to best get started_
 
 * start with just buying 1 contract (100 shares)
+* start with buying covered calls a little 'out of the money' until I gain more experience to know when to swing farther left/right
+
