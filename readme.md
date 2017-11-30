@@ -38,6 +38,7 @@ Good code:
     + [General](./design/general.md)
     + [API Design](./design/api.md)
     + [CLI Design](./design/cli.md)
+* [UX](./ux/general.md)
 
 
 **[⬆️ back to top](#programming)**
