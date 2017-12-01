@@ -4,6 +4,8 @@
 > good builder, you can never hope to be a master without a familiarity of the many
 > options at your disposal.
 
+# New stuff
+
 ## Computer Science
 
 Good code:
