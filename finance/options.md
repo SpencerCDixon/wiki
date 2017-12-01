@@ -76,6 +76,15 @@ paid me to have the _right_ to buy my shares.
 **If you are going to sell a covered call, you should be prepared to sell your
 stock at the strike price of the covered call!**
 
+The main attributes that affect selling a covered call are:
+* Market environment
+* Underlying stock
+* Strike price
+* Premium
+* Expiration date
+* Interest rates
+* Dividends
+
 ## Put
 
 ## Vocab
