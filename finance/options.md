@@ -85,13 +85,39 @@ The main attributes that affect selling a covered call are:
 * Interest rates
 * Dividends
 
+### Trading Plan (covered calls)
+
+After selling a covered call the work doesn't end -- it just begins.  You need
+to look after the option (and even develop a trading plan) to make sure things
+are going how you want them to. 
+
+**stock price goes above strike** - it's okay, you miss out on some profit (diff
+from strike of option and actual value) but you still make money (the premium
+and profit from price you purchased stock at).  
+
+**stoke stays same price** - this is the ideal situation, you just got paid a
+premium for renting a right.
+
+**stoke price goes down** - action _may_ be required.  If you think the stock
+will recover then you can do nothing and you just got paid a premium to offset
+any temporary loss.  If it goes below the breakeven price (stock price -
+premium) then you might want to consider buying back the option and selling the
+stock to avoid any further damages.
+
+### Buying Calls
+
+When buying my first calls I should focus on in the money options.  These calls
+have more _instrinsic_ value and require less rallying of the underlying stock
+to go up in order for me to get my money back.  Buying calls out of the money is
+a lot cheaper but means that I have to be very confident the stock is going to
+rise a lot for some reason.
+
 ## Put
 
 ## Vocab
 
 **Strike Price**: price you pay to get the shares.
 **Premium**: If buyer, the price you pay to have the right to buy. If seller, it's the money you receive for giving the right.
-
 **At-the-money**: when the option strike price is within a few pennies of what the stock is currently trading for. In options chain graphs this is the line that changes the colors.
 **Out-of-the-money**: when the strike price of the call option is higher than the price of the underlying stock.
 **In-the-money**: when the strike price of the call option is lower than the price of the underlying stock.
