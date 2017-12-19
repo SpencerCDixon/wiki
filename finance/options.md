@@ -106,11 +106,12 @@ stock to avoid any further damages.
 
 ### Buying Calls
 
-When buying my first calls I should focus on in the money options.  These calls
-have more _instrinsic_ value and require less rallying of the underlying stock
-to go up in order for me to get my money back.  Buying calls out of the money is
-a lot cheaper but means that I have to be very confident the stock is going to
-rise a lot for some reason.
+When buying my first calls I should focus on in the money options.  
+These calls-have more _instrinsic_ value and require less rallying of the underlying stock-to go up in order for me to 
+get my money back.  Buying calls out of the money is-a lot cheaper but
+means that I have to be very confident the stock is going to-rise a l
+ot for some reason.-
+
 
 ## Put
 
