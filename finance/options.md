@@ -107,11 +107,10 @@ stock to avoid any further damages.
 ### Buying Calls
 
 When buying my first calls I should focus on in the money options.  
-These calls-have more _instrinsic_ value and require less rallying of the underlying stock-to go up in order for me to 
-get my money back.  Buying calls out of the money is-a lot cheaper but
-means that I have to be very confident the stock is going to-rise a l
-ot for some reason.-
-
+These calls-have more _instrinsic_ value and require less rallying of 
+the underlying stock-to go up in order for me to get my money back.  
+Buying calls out of the money is-a lot cheaper but means that I have to 
+be very confident the stock is going to-rise a lot for some reason.
 
 ## Put
 
@@ -129,4 +128,3 @@ _Some notes on how to best get started_
 
 * start with just buying 1 contract (100 shares)
 * start with buying covered calls a little 'out of the money' until I gain more experience to know when to swing farther left/right
-
