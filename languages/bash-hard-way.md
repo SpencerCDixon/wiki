@@ -48,3 +48,5 @@ set -ex
 ```
 
 Put curly braces around variables names in bash.
+
+[Useful website for testing bash scripts](https://www.shellcheck.net/)
