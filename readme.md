@@ -13,6 +13,7 @@ Good code:
 * [Languages](./languages/general.md)
     + [General](./languages/general.md)
     + [Go](./languages/go/general.md)
+    + [C](./languages/c/general.md)
     + [JavaScript](./languages/javascript/node.md)
     + [Character Encoding](./languages/character-encoding.md)
     + [Bash](./languages/bash.md)
